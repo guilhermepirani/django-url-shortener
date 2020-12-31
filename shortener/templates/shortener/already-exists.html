@@ -10,7 +10,7 @@
     <span>From</span>
     <p>{{ object.url }}</p>
     <span>To</span>
-    <p><a class='btn-link'  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
+    <p><a class='btn-link'  href='{{ object.get_short_url }}' target="_blank"></a></p>
     {% if object.clickevent.count %} 
         <p>This link was clicked
           <span class="badge bg-success">

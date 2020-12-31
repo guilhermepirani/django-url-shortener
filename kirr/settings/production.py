@@ -62,7 +62,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'kirr.urls'
 ROOT_HOSTCONF = 'kirr.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = 'gpkirr.herokuapp.com'
+DEFAULT_REDIRECT_URL = 'http://gpkirr.herokuapp.com'
 PARENT_HOST = 'gpkirr.herokuapp.com'
 
 TEMPLATES = [
