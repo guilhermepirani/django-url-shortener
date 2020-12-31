@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }}
+{% endblock title %}
+
+{% block content %}
+<div class='mt-5'>
+    <h1>We found your link!</h1>
+    <span>From</span>
+    <p>{{ object.url }}</p>
+    <span>To</span>
+    <p><a class='btn-link'  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
+    {% if object.clickevent.count %} 
+        <p>This link was clicked
+          <span class="badge bg-success">
+          	{{ object.clickevent.count }}
+     	  </span> times before!</p> 
+    {% endif %}
+    <a class='btn btn-primary back' href='/'>+ New</a>
+</div>
+{% endblock content %}

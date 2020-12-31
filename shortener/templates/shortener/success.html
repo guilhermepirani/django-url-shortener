@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }}
+{% endblock title %}
+
+{% block content %}
+<div class='mt-5'>
+    <h1>Success! Here's your new link!</h1>
+    <span>From</span>
+    <p>{{ object.url }}</p>
+    <span>To</span>
+    <p><a class='btn-link' href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
+    <a class='btn btn-primary back' href='/'>+ New</a>
+</div>
+{% endblock %}
